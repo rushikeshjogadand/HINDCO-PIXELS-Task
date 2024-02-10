@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>PIXELS</title>
+    <style>
+       *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+    z-index: 2;
+    position: relative;
+    color: #fff;
+   
+}
+nav h1{
+    font-weight: bold;
+    font-size: 30px;
+    margin-right: 100px;
+}
+nav span{
+    font-weight: 500;
+    margin-left: 30px;
+}
+#home{
+    border-bottom: 4px solid #fff;
+    padding-bottom: 4px;
+}
+
+.carousel{
+    height: 600px;
+    margin-top: -85px;
+  position: absolute;
+}
+.carousel-item img{
+    height: 600px;
+}
+.carousel-caption{
+   margin-bottom: 180px;
+}
+.carousel-caption button{
+    border-radius: 20px;
+    height: 40px;
+}
+.carousel-caption h1{
+    font-weight: bolder;
+    font-size: 60px;
+}
+article div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+article h2{
+    font-weight: bolder;
+    font-size: 36px;
+    padding: 10px 0px;
+    height: 60px;
+    margin-top: -6px;
+}
+
+        .content {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        
+        }
+
+        .content-img,
+        .content-title {
+            width: 50%;
+            height: 700px;
+        }
+
+        .content-img img {
+            width: 100%;
+            height: 700px;
+        }
+
+        .content-title {
+            padding: 30px 100px;
+            background-color: #161c2e;
+        }
+
+        .content-title span {
+            color: #ffffff33;
+            margin: 9px 0px;
+            display: block;
+            font-size: 18px;
+        }
+
+        .content-title h2 {
+            color: #fff;
+            font-size: 31px;
+        }
+
+        .content-title p {
+            color: #ffffff80;
+            margin: 27px 0px;
+            line-height: 29px;
+        }
+
+        #button-2,
+        #button-1 {
+            border-radius: 30px;
+            width: 200px;
+            height: 60px;
+            margin-bottom: 7px;
+            font-weight: bolder;
+            font-size: 17px;
+        }
+
+        #button-1 {
+            margin-top: 40px;
+            margin-bottom: 2px;
+            width: 230px;
+            background-color: transparent;
+            border: 2px solid #fff;
+            color: #fff;
+            padding: 0px 10px;
+            transition: all 0.4s;
+        }
+        #content-title-information {
+            height: 700px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #content-title-information h4 {
+            color: #fff;
+        }
+
+        #content-title-information h2 {
+            font-size: 28px;
+            font-weight: bolder;
+        }
+        #imges{
+            height: 700px;
+        }
+
+        .main-content {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .main-content h4{
+            font-size: 26px;
+            font-weight: bolder;
+        }
+        .main-content p{
+            font-size: 15px;
+        }
+
+        .main-content span {
+            margin-right: -7px;
+            font-size: 70px;
+            font-weight: bolder;
+            color: #ffffff80;
+            opacity: 0.2;
+        }
+
+        #title {
+            color: #ffffff80;
+            font-size: 18px;
+        }
+        .right{
+            margin-top: 20px;
+        }
+       .main{
+            width: 100%;
+            height: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .carousel-inners{
+            margin-top: 120px;
+            display: flex;
+            justify-content: space-between;
+           
+        }
+        .carousel-inners p{
+            line-height: 28px;
+            font-size: 17px;
+        }
+        .carousel-item-content{
+            display: flex;
+            padding: 50px;
+            gap: 40px;
+            color: #7E8890;
+        }
+        .carousel-item-content img{
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+
+        }
+        .carousel-caption button{
+            width: 300px;
+            height: 50px;
+            font-weight: bolder;
+            border: 3px solid #fff;
+            border-radius: 40px;
+            transition: all 0.5s ;
+        }
+        .carousel-caption button:hover{
+            background-color: #fff;
+            color: #f4bd00;
+        }
+      
+        footer{
+            width: 100%;
+            height: 520px;
+            padding-top: 30px;
+            font-size: 17px;
+            background-color:#f4bd00;
+            
+        }
+        .footer-list{
+            margin-top: 50px;
+            display: flex;
+            justify-content: space-around;
+        }
+        .footer-list .left1  {
+            display: flex;
+            justify-content: space-between;
+            width: 50%;
+            height: 200px;
+        }
+        footer .right{
+            margin-top: -10px;
+        }
+        #imbutton{
+            margin-top: 30px;
+            border-radius: 40px;
+            background-color: transparent;
+            border: 2px solid #ffff;
+            padding: 5px 30px;
+            color: #fff;
+            transition: all 0.5s ease-in-out;
+        }
+        #imbutton:hover{
+            background-color:#fff;
+            color: #f4bd00;
+        }
+        .left1 div{
+            padding: 0px 50px;
+            width: 100%;
+        }
+        .footer-list span{
+            font-size: 20px;
+            font-weight: bolder;
+        }
+
+        .footer-list a{
+            text-decoration: none;
+            color: #00000066;
+        }
+        .footer-list p{
+            color: #00000066;
+            
+        }
+        .footer-list a:hover{
+            color:black;
+        }
+        .footer-list .three span{
+        line-height: 40px;
+        margin-left: 10px;
+       }
+       .footer-last{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 50px;
+            margin-top: 120px;
+            font-size: 18px;
+            color: #00000066;
+            text-align: center;
+       }
+
+       @media (max-width:767px){
+
+
+        nav{
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    padding: 0px;
+    z-index: 2;
+    position: relative;
+    color: #fff;
+   
+}
+nav h1{
+    font-size: 16px;
+    margin-right: 100px;
+}
+nav span{
+    margin-left: 0px;
+    font-size: 12px;
+}
+
+.carousel{
+    height: 320px;
+    margin-top: -85px;
+  position: absolute;
+}
+.carousel-item img{
+    height: 320px;
+}
+.carousel-caption{
+   margin-bottom: 10px;
+}
+.carousel-caption h1{
+    font-size: 20px;
+}
+.carousel-caption p{
+    font-size: 11px;
+}
+
+
+        article h2{
+        font-size: 22px;
+        }
+
+        .content {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        
+        }
+
+        
+        .content-title {
+            width: 100%;
+            height: 800px;
+        }
+        .content-img{
+            width: 100%;
+            height: 350px;
+        }
+
+        .content-title {
+            padding: 0px 6px;
+        }
+
+        .content-title h2 {
+            color: #fff;
+            font-size: 19px;
+        }
+
+        #button-1 {
+            margin-top: 4px;
+            margin-left: 10px;
+        }
+        #content-title-information {
+            height: 900px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        #content-flex{
+            display: flex;
+            flex-direction: column-reverse;
+        }
+
+        #content-title-information h4 {
+            color: #fff;
+        }
+
+        #content-title-information h2 {
+            font-size: 28px;
+            font-weight: bolder;
+        }
+        #imges{
+            width: 100%;
+            height: 100%;
+        }
+
+        .main-content h4{
+            font-size: 24px;
+        }
+
+        .main-content span {
+            font-size: 60px;
+        }
+
+        #title {
+            font-size: 20px;
+        }
+        .right{
+            margin-top: 0px;
+        }
+        .main{
+            margin-top: 30px;
+            width: 100%;
+            height: 400px;
+            display: flex;
+
+        }
+        .carousel-inners{
+            margin-top: 0px;
+            display: flex;
+            font-size: 15px;
+            flex-wrap: wrap;
+          
+           
+        }
+        .carousel-inners p{
+            line-height: 16px;
+            font-size: 15px;
+        }
+        .carousel-item-content{
+            display: flex;
+            padding: 0px;
+            gap: 20px;
+        }
+        .carousel-item-content img{
+            width: 70px;
+            height: 70px;
+
+        }
+        #name{
+            padding: 0px;
+            margin: 0px;
+        }
+       
+
+        footer{
+            width: 100%;
+            height: 620px;
+            padding-top: 30px;
+            font-size: 16px;
+            
+        }
+        .footer-list{
+            margin-top: 50px;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            
+        }
+        .footer-list .left1  {
+            display: flex;
+           
+            justify-content: space-between;
+            width: 100%;
+            height: 300px;
+        }
+        footer .right{
+            margin-top: -10px;
+        }
+        #imbutton{
+            margin-top: 10px;
+            border-radius: 40px;
+            padding: 3px 5px;
+            width: 100px;
+        }
+        .left1 div{
+            padding: 0px 10px;
+            width: 100%;
+        }
+        .footer-list span{
+            font-size: 20px;
+            font-weight: bolder;
+        }
+
+        .footer-list a{
+            text-decoration: none;
+            color: #00000066;
+        }
+        .footer-list p{
+            color: #00000066;
+            
+        }
+        .footer-list a:hover{
+            color:black;
+        }
+        .footer-list .three span{
+        line-height: 40px;
+        margin-left: 10px;
+       }
+       .footer-last{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 50px;
+            margin-top: 120px;
+            font-size: 18px;
+            color: #00000066;
+            text-align: center;
+       
+       }
+        
+       }
+
+       @media (max-width:1199px){
+      
+       .content-img,
+        .content-title {
+            width: 100%;
+            
+        }
+
+        .content-img img {
+            width: 100%;
+            
+        }
+        #content-flex{
+            display: flex;
+            flex-direction: column-reverse;
+        }
+        .main{
+            margin-top: 30px;
+            width: 100%;
+            height: 600px;
+            display: flex;
+
+        }
+        .carousel-inners{
+            margin-top: 0px;
+            display: flex;
+            font-size: 15px;
+            flex-wrap: wrap;
+          
+           
+        }
+        footer{
+            width: 100%;
+            height: 620px;
+            padding-top: 30px;
+            font-size: 16px;
+            
+        }
+        .footer-list{
+            margin-top: 50px;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            
+        }
+        .footer-list .left1  {
+            display: flex;
+           
+            justify-content: space-between;
+            width: 100%;
+            height: 300px;
+        }
+       }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>PIXELS.</h1>
+            </div>
+            <div class="options">
+                <span id="home">HOME</span>
+                <span>ABOUT</span>
+                <span>PORTFOLIO</span>
+                <span>CONTACT</span>
+            </div>
+        </nav>
+
+
+        <div class="carousel slide" data-bs-ride="carousel" id="banner">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./images/head-1.jpg" height="300px" width="100%">
+                </div>     
+                <div class="carousel-caption">
+                    <h1>AWARD WINNING AGENCY</h1>
+                    <P>A new website template by website under license Creative Commons 3.0</P>
+                    <button class="btn btn-outline-light pl-4 pr-4 border border-white">Download This Template</button>
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/head-2.jpg" height="300px" width="100%">
+                </div>
+                <div class="carousel-caption">
+                    <h1>AWARD WINNING AGENCY</h1>
+                    <P>A new website template by website under license Creative Commons 3.0</P>
+                    <button  class="btn btn-outline-light pl-4 pr-4 border border-white">Download This Template</button>
+                
+                </div>
+            </div>
+            <button data-bs-target="#banner"  data-bs-slide="prev" class="carousel-control-prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" data-bs-theme="dark" data-bs-slide="next" data-bs-target="#banner">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+            <div class="carousel-indicators">
+                <button   data-bs-target="#banner" class="active" data-bs-slide-to="0"></button>
+                <button data-bs-target="#banner" class="active" data-bs-slide-to="1"></button>
+            </div>
+        </div>
+    </header>
+    <article>
+        <div><h2>LET'S BUILD SOMTHING GREAT</h2></div>
+    </article>
+    <section>
+        <div class="content">
+            <div class="content-img">
+                <img src="./images/img1.jpg" alt="">
+            </div>
+            <div class="content-title">
+                <span> FEATURED WORK</span>
+                <h2>WATCH APPLICATION</h2>
+                <p>Smartwatch screens are much smaller compared to smartphones or tablets, so watch applications need to be designed with a focus on simplicity and minimalism. Information should be concise and easily digestible to fit within the limited screen space.</p>
+                <p> Interaction with a smartwatch typically involves gestures, taps, swipes, and voice commands due to the absence of a keyboard or mouse. Watch applications should have intuitive and user-friendly interfaces optimized for these input methods.</p>
+                <button class="btn btn-primary" id="button-1">Read Full Case Study</button> <br>
+                <button class="mt-2 text-light btn btn-warning" id="button-2">Viwe All Portfolio</button>
+            </div>
+        </div>
+
+
+        <div class="content">
+            <div class="content-title">
+                <span>ABOUT US</span>
+                <h2>MEET THE TEAM</h2>
+                <p>Display high-quality photos of each team member. These photos should be professional yet approachable, reflecting the personality of each individual. , Include short biographies or descriptions for each team member. Highlight their professional background, areas of expertise, and any unique qualities or accomplishments that make them stand out.</p>
+                <p>Provide the names and job titles of each team member. This helps visitors quickly understand who they are and what they do within the organization.  Optionally, you can include contact information such as email addresses or LinkedIn profiles to encourage communication or networking.</p>
+                <button class="btn btn-primary" id="button-1">Learn More</button>
+            </div>
+            <div class="content-img">
+                <img src="./images/img-2.png" alt="">
+            </div>
+        </div>
+
+        <div class="content" id="content-flex">
+            <div class="content-img">
+                <img id="imges" src="./images/img-3.jpeg" alt="">
+            </div>
+            <div class="content-title" id="content-title-information">
+                <div class="left ">
+
+                    <div class="main-content">
+                        <div class="mt-5">
+                            <span class="mt-5 d-block" >1</span>
+                        </div>
+                        <div>
+                            <div>
+                                <span id="title">OUR SERVICES</span>
+                                <h2 class="pb-4">WHAT WE DO</h2>
+                            </div>
+                            <div >
+                                <h4>Interface Design</h4>
+                                <p>User Interface (UI) Design focuses on anticipating what users might need to do and ensuring that. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main-content  ">
+                        <div>
+                            <span>3</span>
+                        </div>
+                        <div >
+                            <h4>User Experience</h4>
+                            <p> User experience (UX) focuses on having a deep understanding of users, what they need, what they value.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <button  id="button-1">See All Our Services</button>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="main-content mt-5">
+                        <div>
+                            <span>2</span>
+                        </div>
+                        <div>
+                            <h4>User Experience</h4>
+                            <p> User experience (UX) focuses on having a deep understanding of users, what they need, what they value.</p>
+                        </div>
+                    </div>
+                    <div class="main-content mb-5">
+                        <div>
+                            <span>4</span>
+                        </div>
+                        <div>
+                            <h4>Product Strategy</h4>
+                            <p> User Interface (UI) Design focuses on anticipating what users might need to do and ensuring that.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="main">
+            <div id="carouselExampleDark" class="carousel carousel-dark slide">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="10000">
+                        <div class="carousel-inners">
+                            <div class="carousel-item-content">
+                                <div>
+                                    <img src="./images/man-1.png" alt="">
+                                </div>
+                                <div>
+                                   <p> Design must be functional and functionality must be translated into visual aesthetics, without any reliance on gimmicks that have to be explained.</p>
+                                     
+                                     <div class="mt-5 " id="name">
+                                       <span> - Ferdinand A. Porsche</span> <br>
+                                        <span>Design Lead at AirBNB</span>
+                                     </div>
+                                </div>
+                               
+                            </div>
+                            <div class="carousel-item-content">
+                                <div>
+                                    <img src="./images/man-2.png" alt="">
+                                </div>
+                                <div>
+                                   <p> "Creativity is just connecting things. When you ask creative people how they did something. they feel a little guilty because they didn't really do it, they just saw something. It seemed obvious to them after a while."</p>
+
+                                    <div class="mt-5 " id="name">
+                                        - Steve Jobs
+                                    </div>
+                                </div>
+                               
+                            </div>
+                        </div>
+                  </div>
+                  <div class="carousel-item" data-bs-interval="2000">
+                    <div class="carousel-inners">
+                        <div class="carousel-item-content">
+                            <div>
+                                <img src="./images/man-3.png" alt="">
+                            </div>
+                            <div>
+                               <p> Mi"Creativity is just connecting things. When you ask creative people how they did something. they feel a little guilty because they didn't really do it, they just saw something. It seemed obvious to them after a while</p>
+
+                                 <div class="mt-5 " id="name">
+                                    Steve Jobs
+                                    <br>
+                                    Co-Founder Square
+                                 </div>
+                            </div>
+                           
+                        </div>
+                        <div class="carousel-item-content">
+                            <div>
+                                <img src="./images/man-1.png" alt="">
+                            </div>
+                            <div>
+                                <p>"Design must be functional and functionality must be translated into visual aesthetics, without any reliance on gimmicks that have to be explained."
+                                </p>
+                                <div class="mt-5 " id="name">
+                                    <span>Ferdinand A.  Porsche</span> <br>
+                                    <span> Design Lead at AirBNB</span>
+                                </div>
+                            </div>
+                          
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                </button>
+               
+              </div>
+        </div>
+
+    </section>
+
+    <footer>
+        <div class="footer-list">
+            <div  class="left1">
+                <div>
+                    <h4>About Us</h4>
+                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                   
+                    <button  id="imbutton">I'm a button</button>
+                </div>
+                <div >
+                   <h4> Services</h4>
+                    <p><a href="#">Interface Design
+                    </a></p>
+                    <p><a href="#">User Experience
+                    </a></p>
+                    <p><a href="#">Web & App Development</a></p>
+                    <p><a href="#">Product Strategy</a></p>
+                   
+                </div>
+    
+               
+            </div>
+            
+            <div class="right pe-5">
+                <div class="three ">
+                 <h4>Connect with us</h4>
+                    <div>
+                    <a href="#"><span class="bi bi-twitter"></span></a>
+                    <a href="#"><span class="bi bi-facebook"></span></a>
+                    <a href="#"><span class="bi bi-whatsapp"></span></a>
+                    <a href="#"> <span class="bi bi-instagram"></span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-last">
+           <div>
+                <p>Copyright © 2021.Company name All rights reserved.</p>
+           </div>
+        </div>
+
+    </footer>
+</body>
+
+</html>
