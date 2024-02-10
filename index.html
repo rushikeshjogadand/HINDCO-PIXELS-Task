@@ -18,6 +18,10 @@
     box-sizing: border-box;
     font-family: Arial;
 }
+a{
+    text-decoration: none;
+    color: #ffff;
+}
 nav{
     display: flex;
     align-items: center;
@@ -96,7 +100,7 @@ article h2{
            background-position: center;
         }
         .content-title {
-            padding: 30px 100px;
+            padding: 30px 70px;
             background-color: #161c2e;
         }
 
@@ -119,24 +123,32 @@ article h2{
         }
 
         #button-2,
-        #button-1 {
+        .button-1 {
             border-radius: 30px;
             width: 200px;
-            height: 60px;
+            height: 55px;
             margin-bottom: 7px;
             font-weight: bolder;
             font-size: 17px;
         }
+        #button-2:hover{
+           border: 3px solid #fff;
+        }
 
-        #button-1 {
+        .button-1 {
             margin-top: 40px;
             margin-bottom: 2px;
-            width: 230px;
+            width: 220px;
             background-color: transparent;
             border: 2px solid #fff;
             color: #fff;
             padding: 0px 10px;
-            transition: all 0.4s;
+            transition: all 1ms;
+        }
+        .button-1:hover{
+            color: #ffffff;
+            background-color: #f4bd00;
+            
         }
         #content-title-information {
             height: 720px;
@@ -150,7 +162,7 @@ article h2{
         }
 
         #content-title-information h2 {
-            font-size: 28px;
+            font-size: 23px;
             font-weight: bolder;
         }
         #imges{
@@ -164,7 +176,7 @@ article h2{
             align-items: center;
         }
         .main-content h4{
-            font-size: 26px;
+            font-size: 22px;
             font-weight: bolder;
         }
         .main-content p{
@@ -274,12 +286,10 @@ article h2{
         }
 
         .footer-list a{
-            text-decoration: none;
             color: #00000066;
         }
         .footer-list p{
-            color: #00000066;
-            
+            color: #00000066;     
         }
         .footer-list a:hover{
             color:black;
@@ -304,18 +314,12 @@ article h2{
 
 
         nav{
-    display: flex;
-    align-items: center;
     justify-content:space-evenly;
     padding: 0px;
-    z-index: 2;
-    position: relative;
-    color: #fff;
-   
 }
 nav h1{
     font-size: 16px;
-    margin-right: 100px;
+
 }
 nav span{
     margin-left: 0px;
@@ -325,7 +329,6 @@ nav span{
 .carousel{
     height: 320px;
     margin-top: -85px;
-  position: absolute;
 }
 .carousel-item img{
     height: 320px;
@@ -340,66 +343,25 @@ nav span{
     font-size: 11px;
 }
 
-
-        article h2{
-        font-size: 22px;
-        }
-
-        .content {
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-        
-        }
-
-        
+article h2{
+    font-size: 22px;
+}
+.content-img{
+    height: 350px;
+}       
+.content-img img{
+    width: 100%;
+    height: 350px;       
+}    
         .content-title {
-            width: 100%;
-            height: 800px;
-        }
-        .content-img{
-            width: 100%;
-            height: 350px;
-        }
-    
-        .content-img img{
-            width: 100%;
-            height: 350px;
-        }
-        
-
-        .content-title {
-            padding: 0px 6px;
-        }
-
-        .content-title h2 {
-            color: #fff;
-            font-size: 19px;
-        }
-
-        #button-1 {
-            margin-top: 4px;
-            margin-left: 10px;
+            padding: 0px 10px;
         }
         #content-title-information {
             height: 900px;
-            display: flex;
             flex-wrap: wrap;
-            justify-content: center;
         }
         #content-flex{
-            display: flex;
             flex-direction: column-reverse;
-        }
-
-        #content-title-information h4 {
-            color: #fff;
-        }
-
-        #content-title-information h2 {
-            font-size: 28px;
-            font-weight: bolder;
         }
         #imges{
             width: 100%;
@@ -409,38 +371,14 @@ nav span{
         .main-content h4{
             font-size: 24px;
         }
-
-        .main-content span {
-            font-size: 60px;
-        }
-
-        #title {
-            font-size: 20px;
-        }
         .right{
             margin-top: 0px;
         }
-        .main{
-            margin-top: 30px;
-            width: 100%;
-            height: 400px;
-            display: flex;
-
-        }
-        .carousel-inners{
-            margin-top: 0px;
-            display: flex;
-            font-size: 15px;
-            flex-wrap: wrap;
-          
-           
-        }
         .carousel-inners p{
-            line-height: 16px;
-            font-size: 15px;
+            line-height: 14px;
+            font-size: 14px;
         }
         .carousel-item-content{
-            display: flex;
             padding: 0px;
             gap: 20px;
         }
@@ -448,12 +386,6 @@ nav span{
             width: 70px;
             height: 70px;
         }
-        #name{
-            padding: 0px;
-            margin: 0px;
-        }
-       
-
         footer{
             width: 100%;
             height: 620px;
@@ -461,66 +393,14 @@ nav span{
             font-size: 16px;
             
         }
-        .footer-list{
-            margin-top: 50px;
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-            
-        }
-        .footer-list .left1  {
-            display: flex;
-           
-            justify-content: space-between;
-            width: 100%;
-            height: 300px;
-        }
-        footer .right{
-            margin-top: -10px;
-        }
-        #imbutton{
-            margin-top: 10px;
-            border-radius: 40px;
-            padding: 3px 5px;
-            width: 100px;
-        }
         .left1 div{
             padding: 0px 10px;
             width: 100%;
         }
-        .footer-list span{
-            font-size: 20px;
-            font-weight: bolder;
-        }
-
-        .footer-list a{
-            text-decoration: none;
-            color: #00000066;
-        }
-        .footer-list p{
-            color: #00000066;
-            
-        }
-        .footer-list a:hover{
-            color:black;
-        }
         .footer-list .three span{
         line-height: 40px;
         margin-left: 10px;
-       }
-       .footer-last{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 100%;
-            height: 50px;
-            margin-top: 120px;
-            font-size: 18px;
-            color: #00000066;
-            text-align: center;
-       
-       }
-        
+       }        
        }
 
        @media (max-width:1199px){
@@ -587,10 +467,10 @@ nav span{
                 <h1>PIXELS.</h1>
             </div>
             <div class="options">
-                <span id="home">HOME</span>
-                <span>ABOUT</span>
-                <span>PORTFOLIO</span>
-                <span>CONTACT</span>
+                <a href="#"><span id="home">HOME</span></a>
+                <a href="#"><span>ABOUT</span></a>
+                <a href="#"><span>PORTFOLIO</span></a>
+                <a href="#"><span>CONTACT</span></a>
             </div>
         </nav>
 
@@ -640,26 +520,26 @@ nav span{
                 <h2>WATCH APPLICATION</h2>
                 <p>Smartwatch screens are much smaller compared to smartphones or tablets, so watch applications need to be designed with a focus on simplicity and minimalism. Information should be concise and easily digestible to fit within the limited screen space.</p>
                 <p> Interaction with a smartwatch typically involves gestures, taps, swipes, and voice commands due to the absence of a keyboard or mouse. Watch applications should have intuitive and user-friendly interfaces optimized for these input methods.</p>
-                <button class="btn btn-primary" id="button-1">Read Full Case Study</button> <br>
+                <button class="button-1">Read Full Case Study</button> <br>
                 <button class="mt-2 text-light btn btn-warning" id="button-2">Viwe All Portfolio</button>
             </div>
         </div>
 
 
-        <div class="content">
+        <div class="content"  id="content-flex">
             <div class="content-title">
                 <span>ABOUT US</span>
                 <h2>MEET THE TEAM</h2>
                 <p>Display high-quality photos of each team member. These photos should be professional yet approachable, reflecting the personality of each individual. , Include short biographies or descriptions for each team member. Highlight their professional background, areas of expertise, and any unique qualities or accomplishments that make them stand out.</p>
                 <p>Provide the names and job titles of each team member. This helps visitors quickly understand who they are and what they do within the organization.  Optionally, you can include contact information such as email addresses or LinkedIn profiles to encourage communication or networking.</p>
-                <button class="btn btn-primary" id="button-1">Learn More</button>
+                <button class=" button-1">Learn More</button>
             </div>
             <div class="content-img">
                 <img src="./images/img-2.png" alt="">
             </div>
         </div>
 
-        <div class="content" id="content-flex">
+        <div class="content">
             <div class="content-img ">
                 <img id="imges" src="./images/img-3.jpeg" alt="">
             </div>
@@ -691,7 +571,7 @@ nav span{
                         </div>
                     </div>
                     <div>
-                        <button  id="button-1">See All Our Services</button>
+                        <button  class="button-1">See All Our Services</button>
                     </div>
                 </div>
                 <div class="right">
