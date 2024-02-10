@@ -29,16 +29,15 @@ nav{
     padding: 20px;
     z-index: 2;
     position: relative;
-    color: #fff;
    
 }
 nav h1{
+    color: #fff;
     font-weight: bold;
     font-size: 30px;
     margin-right: 100px;
 }
 nav span{
-    font-weight: 500;
     margin-left: 30px;
 }
 #home{
@@ -87,8 +86,7 @@ article h2{
         
         }
 
-        .content-img,
-        .content-title {
+        .content-img, .content-title {
             width: 50%;
             height: 700px;
         }
@@ -122,14 +120,14 @@ article h2{
             line-height: 29px;
         }
 
-        #button-2,
-        .button-1 {
+        #button-2, .button-1 {
             border-radius: 30px;
             width: 200px;
             height: 55px;
             margin-bottom: 7px;
             font-weight: bolder;
             font-size: 17px;
+            transition: all 1ms;
         }
         #button-2:hover{
            border: 3px solid #fff;
@@ -137,13 +135,12 @@ article h2{
 
         .button-1 {
             margin-top: 40px;
-            margin-bottom: 2px;
             width: 220px;
             background-color: transparent;
             border: 2px solid #fff;
             color: #fff;
             padding: 0px 10px;
-            transition: all 1ms;
+            
         }
         .button-1:hover{
             color: #ffffff;
@@ -285,11 +282,8 @@ article h2{
             font-weight: bolder;
         }
 
-        .footer-list a{
+        .footer-list a , p {
             color: #00000066;
-        }
-        .footer-list p{
-            color: #00000066;     
         }
         .footer-list a:hover{
             color:black;
@@ -313,9 +307,9 @@ article h2{
        @media (max-width:767px){
 
 
-        nav{
-    justify-content:space-evenly;
-    padding: 0px;
+nav{
+justify-content:space-evenly;
+padding: 0px;
 }
 nav h1{
     font-size: 16px;
@@ -404,54 +398,22 @@ article h2{
        }
 
        @media (max-width:1199px){
-      
-       .content-img,
-        .content-title {
-            width: 100%;
-            
-        }
-
-        .content-img img {
-            width: 100%;
-            
+       .content-img, .content-title ,  .content-img img {
+            width: 100%;  
         }
         #content-flex{
-            display: flex;
             flex-direction: column-reverse;
         }
         .main{
-            margin-top: 30px;
-            width: 100%;
             height: 600px;
-            display: flex;
-
         }
-        .carousel-inners{
-            margin-top: 0px;
-            display: flex;
-            font-size: 15px;
-            flex-wrap: wrap;
-          
-           
+        .carousel-inners , .footer-list{
+            flex-wrap: wrap;  
         }
         footer{
-            width: 100%;
-            height: 620px;
-            padding-top: 30px;
-            font-size: 16px;
-            
-        }
-        .footer-list{
-            margin-top: 50px;
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-            
+            height: 620px;  
         }
         .footer-list .left1  {
-            display: flex;
-           
-            justify-content: space-between;
             width: 100%;
             height: 300px;
         }
